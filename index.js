@@ -7,17 +7,6 @@ console.log("Welcome " + userName + " to MARVEL QUIZ")
 
 var score =0;
 
-// var highScores = [
-//   {
-//     name: "Suryansh",
-//     score: "3" 
-//   },
-//   {
-//     name: "Lakshay",
-//     score: "3"
-//   }
-// ]
-
 
 function play(question, answer)
 {
@@ -136,6 +125,3 @@ for (var i=0; i<questions.length; i++)
 }
 
 console.log("Your total score is "+score)
-
-// console.log("Check out the high Scores" + highScores.name + "Score "highScores.score )
-  
