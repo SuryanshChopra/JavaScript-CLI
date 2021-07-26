@@ -1,34 +1,26 @@
 var readline = require('readline-sync');
-var score = 0;
 
-var questionOne = "Q. Am i older than 20? "
-var answerOne = "yes"
-var questionTwo = "Q. Are you currently pursuing B.COM? "
-var answerTwo = "no"
+var score =0;
 
-var age = readline.question(questionOne);
+var questionOne = "What is my age? "
+var answerOne = "20"
 
+var questionTwo = "Where do you live? "
+var answerTwo = "Ludhiana"
 
-if (age === answerOne) {
-  console.log("->You are right");
-  score =score +1;
-  
+function play(question, answer)
+{
+  var userAnswer = readline.question(question)
+
+  if (userAnswer === answer) {
+    console.log("You were right")
+    score = score +1
+  }
+  else {
+    console.log("You were wrong")
+  }
 }
-else {
-  console.log("->You are wrong")
-  
-}
 
-var stream = readline.question(questionTwo);
-
-if (age === answerTwo) {
-  console.log("->You are right");
-  score =score +1;
-  
-}
-else {
-  console.log("->You are wrong")
-  
-}
-console.log("Total Score :" + score)
-
+play (questionOne, answerOne)
+play (questionTwo, answerTwo)
+console.log("Total score is "+score)
